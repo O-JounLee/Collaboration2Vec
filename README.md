@@ -7,7 +7,7 @@
   <img width="720" src="collaboration_patterns.PNG">
 </p>
 
-This repository provides an implementation for learning representation of research collaboration patterns as it is described in:
+This repository provides an implementation for learning representation of research collaboration patterns, as described in:
 > Hyeon-Ju Jeon, O-Joun Lee, Jason J. Jung:
 > Is Performance of Scholars Correlated to their Research Collaboration Patterns? 
 > in Proceedings the 6th Workshop on Big Scholarly Data (BigScholar 2019), co-located with the 28th ACM International Conference on Information and Knowledge Management (CIKM 2019), Beijing, China, 11/2019.
@@ -30,13 +30,13 @@ This is developed on top of "gensim" python package.
 
 ### Datasets
 
-We collected the bibliography data from [DBLP](https://dblp.uni-trier.de) dataset over the last five years at the famous conferences (e.g., ICDE, SIGMOD, and VLDB). The dataset consists of rich bibliography information, including the authors, titles, publication year, venues, and so on. The number of citations for the collected papers is acquried from [Scopus](https://www.scopus.com).
-In our co-authorship network, a node indicates a scholar, and each edge denotes whether two corresponding scholars have ever collaborated. Proximity indicates the proximity between two authors, which are measured by the number of co-authored publications.
+We collected the bibliography data from [DBLP](https://dblp.uni-trier.de) dataset for papers presented at the famous conferences on DBMS (e.g., ICDE, SIGMOD, and VLDB) over the last five years. The dataset consists of rich bibliography information including the authors, titles, publication years, venues, and so on. The number of citations for the collected papers is acquried from [Scopus](https://www.scopus.com).
+In our co-authorship network, a node indicates a scholar, and each edge denotes whether two corresponding scholars have ever collaborated. Weights of edges indicate proximity between two authors, which are measured by the number of co-authored publications.
 
 
 ### Options
 
-Learning of the embedding is handled by the `src_code/collaboraion_patterns_embedding.py` script which provides the following command line arguments.
+Learning representations is handled by `src_code/collaboraion_patterns_embedding.py` script which provides the following command line arguments.
 
 
 ## Contact ##
